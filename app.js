@@ -1,17 +1,21 @@
 function assignGroups() {
-    var groupSize = parseInt(document.getElementById('groupSize').value);
+    var numGroups = parseInt(document.getElementById('numGroups').value);
     var itemList = document.getElementById('itemList').value.split('\n').filter(item => item.trim() !== '');
     
     if (itemList.length === 0) {
-        alert('Please enter items and select a valid group size.');
+        alert('Please enter items.');
         return;
     }
 
     var shuffledItems = shuffle(itemList);
     var groups = [];
 
+    for (var i = 0; i < numGroups; i++) {
+        groups.push([]);
+    }
+
     for (var i = 0; i < shuffledItems.length; i++) {
-        groups.push(shuffledItems.slice(i));
+        groups[i % numGroups].push(shuffledItems[i]);
     }
 
     var output = '';
