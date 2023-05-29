@@ -20,6 +20,8 @@ body {
     
     label {
     font-weight: bold;
+    display: block; /* Added to create a block-level element /
+    margin-bottom: 5px; / Added to create spacing between labels */
     }
     
     textarea,
