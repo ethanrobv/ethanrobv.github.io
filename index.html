@@ -2,18 +2,18 @@
 <html>
 <head>
     <title>Team Select</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Add CSS file -->
+    <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Team Selection</h1>
         <label for="itemList">Enter names (one per line):</label><br>
-        <textarea id="itemList" rows="5" cols="30"></textarea><br>
+        <textarea id="itemList" rows="5" class="full-width"></textarea><br>
         <label for="numGroups">Number of teams:</label>
-        <input type="number" id="numGroups" min="1"><br>
-        <button onclick="assignGroups()">Assign Teams</button><br><br>
-        <div id="output"></div>
+        <input type="number" id="numGroups" min="1" class="full-width"><br>
+        <button onclick="assignGroups()" class="full-width">Assign Teams</button><br><br>
+        <div id="output" class="full-width"></div>
     </div>
 </body>
 </html>

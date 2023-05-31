@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -8,51 +7,58 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 400px;
-  }
-  
-  h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
     color: #333;
     text-align: center;
-  }
-  
-  label {
+}
+
+label {
     font-weight: bold;
-  }
-  
-  textarea,
-  input {
+}
+
+textarea,
+input,
+button,
+#output {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  button {
+}
+
+.full-width {
+    display: block;
+    box-sizing: border-box;
+}
+
+button {
     background-color: #4caf50;
     color: white;
     border: none;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: block; /* Display the button as a block-level element */
-    width: 100%; /* Make the button span the full width */
     font-size: 16px;
     margin: 10px 0;
     cursor: pointer;
     border-radius: 4px;
-  }
-  
-  #output {
+}
+
+#output {
     font-size: 18px;
     margin-top: 20px;
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
+}
