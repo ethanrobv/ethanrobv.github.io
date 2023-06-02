@@ -2,7 +2,11 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,10 +14,12 @@ body {
 }
 
 .container {
+    width: 100%;
     max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 h1 {
@@ -37,7 +43,6 @@ button,
 }
 
 .full-width {
-    display: block;
     box-sizing: border-box;
 }
 
